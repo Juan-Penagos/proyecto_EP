@@ -1,0 +1,150 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Catalogo";
+    Layout = "~/Views/Shared/plantilla.cshtml";
+}
+
+@section home {
+    <link rel="stylesheet" href="../css/products.css">
+}
+
+
+<div class="menu">
+    <span class="icon-menu"> Menu</span>
+</div>
+
+
+<div class="container">
+    <div class="objets">
+        <div class="user">
+            <img src="../image/alcoholes.jpg" alt="">
+            <p>Conoce mas de este producto a continuación</p><br><br><br><br>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a asp-area="" asp-controller="InfoProducto" asp-action="Producto2">Comprar</a>
+            }
+            else
+            {
+                <a asp-area="Identity" asp-page="/Account/Login">Comprar</a>
+            }
+
+
+        </div>
+        <div class="user">
+            <img src="../image/trajes.jpg" alt="">
+            <p> Conoce mas de este producto a continuación</p><br><br><br><br>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a asp-area="" asp-controller="InfoProducto" asp-action="Producto1">Comprar</a>
+            }
+            else
+            {
+                <a asp-area="Identity" asp-page="/Account/Login">Comprar</a>
+            }
+
+
+        </div>
+        <div class="user">
+            <img src="../image/jabones.jpg" alt="">
+            <p>Conoce mas de este producto a continuación</p><br><br><br><br>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a asp-area="" asp-controller="InfoProducto" asp-action="Producto3">Comprar</a>
+            }
+            else
+            {
+                <a asp-area="Identity" asp-page="/Account/Login">Comprar</a>
+            }
+
+
+        </div>
+
+        <div class="user">
+            <img src="../image/geles.jpg" alt="">
+            <p>Conoce mas de este producto a continuación</p><br><br><br><br>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a asp-area="" asp-controller="InfoProducto" asp-action="Producto4">Comprar</a>
+            }
+            else
+            {
+                <a asp-area="Identity" asp-page="/Account/Login">Comprar</a>
+            }
+
+        </div>
+        <div class="user">
+            <img src="../image/Tapabocas_de_tela_adidas_TALLA_XS-S_(PACK_DE_3)_(UNISEX)_Negro_H13185_01_laydown.jpg" alt="">
+            <p> Conoce mas de este producto a continuación</p><br><br><br><br>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a asp-area="" asp-controller="InfoProducto" asp-action="Producto5">Comprar</a>
+            }
+            else
+            {
+                <a asp-area="Identity" asp-page="/Account/Login">Comprar</a>
+            }
+
+
+        </div>
+        <div class="user">
+            <img src="../image/fumigadora.jpg" alt="">
+            <p>Conoce mas de este producto a continuación</p><br><br><br><br>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a asp-area="" asp-controller="InfoProducto" asp-action="Producto6">Comprar</a>
+            }
+            else
+            {
+                <a asp-area="Identity" asp-page="/Account/Login">Comprar</a>
+            }
+
+
+        </div>
+
+        <div class="user">
+            <img src="../image/cuaternario.jpg" alt="">
+            <p>Conoce mas de este producto a continuación</p><br><br><br><br>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a asp-area="" asp-controller="InfoProducto" asp-action="Producto7">Comprar</a>
+            }
+            else
+            {
+                <a asp-area="Identity" asp-page="/Account/Login">Comprar</a>
+            }
+
+
+        </div>
+        <div class="user">
+            <img src="../image/CHAQUETA.webp" alt="">
+            <p>Conoce mas de este producto a continuación</p><br><br><br><br>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a asp-area="" asp-controller="InfoProducto" asp-action="Producto8">Comprar</a>
+            }
+            else
+            {
+                <a asp-area="Identity" asp-page="/Account/Login">Comprar</a>
+            }
+
+
+        </div>
+        <div class="user">
+            <img src="../image/Tapete.jpg" alt="">
+            <p>Conoce mas de este producto a continuación</p><br><br><br><br>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a asp-area="" asp-controller="InfoProducto" asp-action="Producto9">Comprar</a>
+            }
+            else
+            {
+                <a asp-area="Identity" asp-page="/Account/Login">Comprar</a>
+            }
+
+
+        </div>
+    </div>
+</div>
